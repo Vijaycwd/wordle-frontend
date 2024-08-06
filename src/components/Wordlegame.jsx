@@ -41,7 +41,7 @@ const Wordlegame = (props) => {
           wordlescore: score,
           createdAt: new Date().toISOString(),
       }
-      Axios.post('http://localhost:5001/wordle/wordle-score', wordleObject)
+      Axios.post('https://wordle-server-gf3r.onrender.com/wordle/wordle-score', wordleObject)
       .then( res =>{
           if(res){
               createWordle = res.data;
@@ -67,7 +67,7 @@ const Wordlegame = (props) => {
     // }, []);
     // function getData() {
     //   Axios.get(
-    //     "http://localhost:5001/wordle"
+    //     "https://wordle-server-gf3r.onrender.com/wordle"
     //   )
     //   .then((response) => {
     //     setData(response.data);

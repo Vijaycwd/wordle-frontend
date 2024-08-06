@@ -49,7 +49,7 @@ function Registerform() {
                 'Content-Type': 'multipart/form-data',
             },
         } 
-        Axios.post('http://localhost:5001/use/create-user', userObject, HEADERS)
+        Axios.post('https://wordle-server-gf3r.onrender.com/use/create-user', userObject, HEADERS)
         .then( res =>{
             if(res.data.message){
                 toast.error('Error', {

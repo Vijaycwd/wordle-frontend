@@ -53,7 +53,7 @@ const Header = () => {
               {/* <Popover.Header as="h3">Uaer </Popover.Header> */}
               <Popover.Body>
                 <div className='text-center'>
-                <img src={`http://localhost:5001/public/uploads/${userData.avatar}`} alt="User Avatar" />
+                <img src={`https://wordle-server-gf3r.onrender.com/public/uploads/${userData.avatar}`} alt="User Avatar" />
                   <p className='fs-4 m-0'>{userData.username}</p>
                   <p>{userData.email}</p>
                   <Button onClick ={logout}>Logout</Button>
